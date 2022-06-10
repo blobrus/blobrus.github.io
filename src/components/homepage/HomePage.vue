@@ -1,34 +1,40 @@
 <template>
+  <head>
+
+  </head>
+  <body>
     <MyNameIsWill />
     <AboutMe />
-    <MyProjects />
-    <ContactMe />
+  </body>
+  
 </template>
 
 <script>
-import AboutMe from './homecomponents/AboutMe.vue'
-import MyProjects from './homecomponents/MyProjects.vue'
-import ContactMe from './homecomponents/ContactMe.vue'
 import MyNameIsWill from './homecomponents/MyNameIsWill.vue'
+import AboutMe from './homecomponents/AboutMe.vue'
 
 export default {
   name: 'HomePage',
   components: {
-    AboutMe,
-    MyProjects,
-    ContactMe,
-    MyNameIsWill
+    MyNameIsWill,
+    AboutMe
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+body {
+  background-image: url('../../assets/geo.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg {
+  height: 100%;
 }
 </style>

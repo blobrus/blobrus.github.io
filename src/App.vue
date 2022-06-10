@@ -1,9 +1,17 @@
 <!--Monday 6/13:
-Merge aboutme + myname is will for 1 homepage, complete page + styling
+Navbar red bg white/pale green text?
 -->
 <template>
-    <NavBar />
-    <component :is="currentView" />
+  <!DOCTYPE html>
+  <html lang="en-us">
+    <head>
+
+    </head>
+    <body>
+      <NavBar />
+      <component :is="currentView" />
+    </body>
+  </html>
 </template>
 
 <script>
@@ -45,7 +53,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
 
