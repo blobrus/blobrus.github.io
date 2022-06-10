@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-            <img src="../../assets/Attonfull.jpg" alt="Selfie" class="img-thumbnail" id="selfPicture" />
+            <img src="../../../assets/Attonfull.jpg" alt="Selfie" class="img-thumbnail" id="selfPicture" />
         </div>
       </div>  
     </div>         

@@ -1,33 +1,39 @@
-<!--Thursday 6/9:
-About Me section (white with blue text?)
-Add section tags or whatever for easier nav?
+<!--Monday 6/13:
+Merge aboutme + myname is will for 1 homepage, complete page + styling
 -->
 <template>
     <NavBar />
-    <MyNameIsWill />
-    <!--
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
-    -->
-    <AboutMe />
-    <MyProjects />
-    <ContactMe />
+    <component :is="currentView" />
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import AboutMe from './components/homepage/AboutMe.vue'
-import MyProjects from './components/homepage/MyProjects.vue'
-import ContactMe from './components/homepage/ContactMe.vue'
-import MyNameIsWill from './components/homepage/MyNameIsWill.vue'
+import HomePage from './components/homepage/HomePage.vue'
+import NotFound from './components/notfound/NotFound.vue'
+
+const routes = {
+  '/': HomePage,
+}
 
 export default {
+  data() {
+    return {
+      currentPath: window.location.hash
+    }
+  },
+  computed: {
+    currentView() {
+      return routes[this.currentPath.slice(1) || '/'] || NotFound
+    }
+  },
+  mounted() {
+    window.addEventListener('hashchange', () => {
+      this.currentPath = window.location.hash
+    })
+  },
   name: 'App',
   components: {
     NavBar,
-    AboutMe,
-    MyProjects,
-    ContactMe,
-    MyNameIsWill
   }
 }
 </script>
