@@ -5,7 +5,7 @@
   <body>
     <div id="skills" class="skills text-danger bg-success">
         <div class="container">
-            <div class="row py-5">
+            <div class="row">
                 <h1>My Skills</h1>
             </div>
             <div class="row">
@@ -36,7 +36,6 @@ export default {
 <style scoped>
 h1 {
   font-size: 5rem;
-  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 
 </style>

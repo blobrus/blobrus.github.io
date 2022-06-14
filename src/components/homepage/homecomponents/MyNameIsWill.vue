@@ -1,7 +1,7 @@
 <template>
   <div id="info" class="info text-light">
     <div class="container">
-      <div class="row py-5">
+      <div class="row">
         <div class="row">
           <h1>Hello, I'm Will.</h1>
         </div>
@@ -35,7 +35,6 @@ export default {
 <style scoped>
   h1 {
     font-size: 5.5rem;
-    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
   }
 
   #selfPicture {

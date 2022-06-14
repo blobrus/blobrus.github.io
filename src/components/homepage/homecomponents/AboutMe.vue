@@ -29,9 +29,6 @@ export default {
 </script>
 
 <style scoped>
-h1, p {
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
 
 h1 {
   font-size: 3.5rem;
