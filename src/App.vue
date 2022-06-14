@@ -1,5 +1,5 @@
-<!--Tues 6/14:
-Finish my skills (c#, java, python, js/html/css, vue, react).
+<!--Weds 6/15:
+Finish skills page with descriptions. Add links page to navbar. Start work on projects page.
 -->
 <template>
   <!DOCTYPE html>
@@ -69,7 +69,7 @@ h1 {
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 
-p {
+p, h3 {
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
