@@ -1,5 +1,5 @@
-<!--Weds 6/15:
-Finish skills page with descriptions. Add links page to navbar. Start work on projects page.
+<!--Thurs 6/16:
+Implement Links/Contact Page. Will probably need to figure out how to make it take whole screen. If extra time style not found page similarly.
 -->
 <template>
   <!DOCTYPE html>
@@ -8,15 +8,17 @@ Finish skills page with descriptions. Add links page to navbar. Start work on pr
     </head>
     <body>
       <NavBar />
-      <div class="py-5">
+      <div class="pt-5">
         <component :is="currentView" />
       </div>
+      <FooterBar />
     </body>
   </html>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import FooterBar from './components/FooterBar.vue'
 import HomePage from './components/homepage/HomePage.vue'
 import NotFound from './components/notfound/NotFound.vue'
 import MySkills from './components/skills/MySkills.vue'
@@ -52,6 +54,7 @@ export default {
   name: 'App',
   components: {
     NavBar,
+    FooterBar,
   }
 }
 </script>
