@@ -8,9 +8,9 @@ Implement Links/Contact Page. Will probably need to figure out how to make it ta
     </head>
     <body>
       <NavBar />
-      <div class="pt-5">
-        <component :is="currentView" />
-      </div>
+        <div class="screen pt-5">
+          <component :is="currentView" />
+        </div>
       <FooterBar />
     </body>
   </html>
@@ -22,10 +22,12 @@ import FooterBar from './components/FooterBar.vue'
 import HomePage from './components/homepage/HomePage.vue'
 import NotFound from './components/notfound/NotFound.vue'
 import MySkills from './components/skills/MySkills.vue'
+import MyLinks from './components/links/MyLinks.vue'
 
 const routes = {
   '/': HomePage,
   'skills': MySkills,
+  'links': MyLinks
 }
 
 export default {
@@ -74,6 +76,10 @@ h1 {
 
 p, h3 {
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.screen {
+  min-height: 100vh;
 }
 
 </style>

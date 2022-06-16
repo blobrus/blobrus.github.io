@@ -1,6 +1,6 @@
 <template>
   <head>
-
+    
   </head>
   <body>
     <div id="skills" class="skills text-danger bg-success">

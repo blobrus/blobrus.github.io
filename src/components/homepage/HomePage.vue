@@ -25,7 +25,7 @@ export default {
 <style scoped>
 body {
   background-image: url('../../assets/geo.jpg');
-  height: 100%;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
