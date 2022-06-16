@@ -8,7 +8,7 @@ Implement Links/Contact Page. Will probably need to figure out how to make it ta
     </head>
     <body>
       <NavBar />
-        <div class="screen pt-5">
+        <div class="screen pt-5 pb-3">
           <component :is="currentView" />
         </div>
       <FooterBar />
